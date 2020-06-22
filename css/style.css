@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "Niconne";
+    src: url("../fonts/niconne/Niconne-Regular.ttf");
+}
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #660066 0%, #003300 100%) no-repeat;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  background-size: 100% 100vh;
+}
+.meniu li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0;
+}
+.meniu li a {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: expanded;
+  color: black;
+}
+.meniu li a:hover {
+  color: #339933;
+  background-color: #660066;
+  border: 1px transparent;
+  border-radius: 5px;
+}
+.logo div {
+    display: none;
+    position: absolute;
+}
+.Produse img {
+  width: 190px;
+  height: 300px;
+  margin: 0;
+}
+
+.meniu li {
+  z-index: 1;
+  overflow: visible;
+}
+.Produse {
+  margin: 100px auto;
+  width: 600px;
+  overflow: hidden;
+}
+.dress {
+  position: relative;
+  overflow: hidden;
+}
+
+.textBox {
+position: absolute;
+width: 90%;
+height: inherit;
+background: grey;
+text-align: justify;
+opacity: 0.6;
+transition: .5s ease;
+margin: 80%;
+backface-visibility: hidden;
+}
+.textBox h1 {
+  position: absolute;
+  text-align: center;
+  border: solid black;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dress:hover .textBox {
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+width: 90%;
+height: 95%;
+margin: 10px;
+}
+.Produse div {display: inline-block;}
+.user1 {
+  display: block;
+}
+.feedback {
+  padding: 1px;
+  vertical-align: top;
+  position: relative;
+}
+.feedback input,
+.feedback textarea {
+    width: 250px;
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid #AE9A64;
+    color: #FFF;
+    background-color: #f9f3ef;
+}
+.feedback textarea {
+    height: 98px;
+}
+.feedback {
+  width: 290px;
+  margin: 10px auto 10px;
+  padding: 5px;
+  border: 2px solid #AE9A64;
+  position: relative;
+  display: inline-block;
+  top: 120px;
+}
+.btn {
+  background-color: #AE9A64;
+  color: white;
+  width: 50px;
+  display: inline-block;
+  padding: 4px 15px;
+  font-weight: bold;
+  text-align: center;
+}
+.btn:hover {
+    background-color: #A18F5F;
+    color: #FFF;
+    cursor: pointer;
+}
+#trimite {
+  text-decoration: none;
+  color: white;
+}
+.row {
+    display: table-row;
+}
+.user {
+    width: 270px;
+    margin: 10px auto 10px;
+    padding: 5px;
+    border: 2px solid #AE9A64;
+    position: relative;
+  }
+.locatie {
+  width: 365px;
+  margin: 10px auto 10px;
+  padding: 5px;
+  border: 2px solid #AE9A64;
+  position: relative;
+  color: #AE9A64;
+  font-weight: bold;
+  display: inline-block;
+  top: 120px;
+}
+.banda {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+.main-header img {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 50%;
+  height: 200px;
+  z-index: -1;
+}
+#container{
+  height: 250px;
+  max-width: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  transform: translate3d(0,0,0);
+}
+#sliderbox{
+position: relative;
+height: 250px;
+width: 2400px;
+top: 0;
+left: 0;
+animation-name: slideranimation;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-fill-mode: backwards;
+transform: translate3d(0, 0, 0);
+background-image: repeat-x;
+scroll-behavior: smooth;
+top: 10px;
+overflow: hidden;
+min-width: 2400px;
+}
+#sliderbox img{
+float: left;
+width: 800px;
+height: 250px;
+transform: translate3d(0, 0, 0);
+background-position: 0 -800px;
+top: 0;
+left: 0;
+transition: opacity 10s ease;
+background-position: 0 -800px;
+animation: slideranimation 20s linear infinite ;
+
+}
+@keyframes slideranimation {
+
+    100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+  @keyframes slideranimation {
+    0%    {left: 0; }
+    100%  {left: -200%;}
+  }
+div.logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  z-index: 1;
+}
+.meniu {
+border-top: 0;
+top: 40px;
+border-left: 50px;
+border-right: 0;
+border-bottom: 10px;
+border-image-repeat: repeat;
+text-align: left;
+width: 35%;
+background-color: lightgrey;
+margin-left: 110px;
+border-radius: 10px 10px 40px 40px;
+position: absolute;
+opacity: 0.7;
+left: 80px;
+z-index: 2;
+overflow: hidden;
+min-width: 450px;
+max-width: 450px;
+}

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Niconne";
+    src: url("../fonts/niconne/Niconne-Regular.ttf");
+}
+.footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+  opacity: 0.3;
+}
